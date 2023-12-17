@@ -3,35 +3,14 @@ Simply go to the discussions tab! Enjoy!
 
 Get started/Writing on GitHub/Start writing on GitHub/Basic formatting syntax
 Basic writing and formatting syntax
+
 In this article
-Headings
-Styling text
-Quoting text
-Quoting code
-Supported color models
-Links
-Section links
-Relative links
-Images
-Lists
-Task lists
-Mentioning people and teams
-Referencing issues and pull requests
-Referencing external resources
-Uploading assets
-Using emoji
-Paragraphs
-Footnotes
-Alerts
-Hiding content with comments
-Ignoring Markdown formatting
-Disabling Markdown rendering
-Further reading
-Create sophisticated formatting for your prose and code on GitHub with simple syntax.
-Headings
-
 To create a heading, add one to six # symbols before your heading text. The number of # you use will determine the hierarchy level and typeface size of the heading.
-
+```
+# A first-level heading
+## A second-level heading
+### A third-level heading
+```
 # A first-level heading
 ## A second-level heading
 ### A third-level heading
