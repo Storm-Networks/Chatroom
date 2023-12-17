@@ -32,7 +32,7 @@ When you use two or more headings, GitHub automatically generates a table of con
 You can indicate emphasis with bold, italic, strikethrough, subscript, or superscript text in comment fields and .md files.
 
 ### Style	Syntax Keyboard shortcut Example Output
-
+<pre>
 **Bold:**	** ** or __ __  `**This is bold text**`  **This is bold text**
 **Italic:**	* * or _ _  `_This text is italicized_`  _This text is italicized_
 **Strikethrough:**	~~ ~~  `~~This was mistaken text~~`  ~~This was mistaken text~~
@@ -40,7 +40,7 @@ You can indicate emphasis with bold, italic, strikethrough, subscript, or supers
 All bold and italic	*** ***	None	`***All this text is important***`  ***All this text is important***
 **Subscript:**	`<sub> </sub>`	`This is a <sub>subscript</sub> text`  This is a <sub>subscript</sub> text
 **Superscript:**	`<sup> </sup>`  `This is a <sup>superscript</sup> text`  This is a <sup>superscript</sup> text
-
+</pre>
 ## Quoting text
 
 You can quote text with a >.
