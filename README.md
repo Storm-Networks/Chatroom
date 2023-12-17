@@ -273,21 +273,17 @@ You can upload assets like images by dragging and dropping, selecting from a fil
 
 You can add emoji to your writing by typing :EMOJICODE:, a colon followed by the name of the emoji.
 
-@octocat :+1: This PR looks great - it's ready to merge! :shipit:
-
-Screenshot of rendered GitHub Markdown showing how emoji codes for +1 and shipit render visually as emoji.
+@octocat `:+1:` :+1: This PR looks great - it's ready to merge! `:shipit:` :shipit:
 
 Typing : will bring up a list of suggested emoji. The list will filter as you type, so once you find the emoji you're looking for, press Tab or Enter to complete the highlighted result.
 
-For a full list of available emoji and codes, see the Emoji-Cheat-Sheet.
-
-Paragraphs
+## Paragraphs
 
 You can create a new paragraph by leaving a blank line between lines of text.
 
-Footnotes
+## Footnotes
 
-You can add footnotes to your content by using this bracket syntax:
+You can add footnotes to your content by using this bracket syntax: `[^1]`
 
 Here is a simple footnote[^1].
 
@@ -296,20 +292,44 @@ A footnote can also have multiple lines[^2].
 [^1]: My reference.
 [^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
   This is a second line.
-The footnote will render like this:
-
-Screenshot of rendered Markdown showing superscript numbers used to indicate footnotes, along with optional line breaks inside a note.
+The contents of the footnotes is listed after the footnotes appear in the .md file, like this:
+```
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
+```
+Go to the bottom of the page to see how the footnotes render.
 
 Note: The position of a footnote in your Markdown does not influence where the footnote will be rendered. You can write a footnote right after your reference to the footnote, and the footnote will still render at the bottom of the Markdown.
 
 Footnotes are not supported in wikis.
-Alerts
+
+## Alerts
 
 Alerts are a Markdown extension based on the blockquote syntax that you can use to emphasize critical information. On GitHub, they are displayed with distinctive colors and icons to indicate the significance of the content.
 
 Use alerts only when they are crucial for user success and limit them to one or two per article to prevent overloading the reader. Additionally, you should avoid placing alerts consecutively. Alerts cannot be nested within other elements.
 
 To add an alert, use a special blockquote line specifying the alert type, followed by the alert information in a standard blockquote. Five types of alerts are available:
+
+Code for alerts:
+```
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+```
+Here are the rendered alerts:
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
@@ -325,33 +345,24 @@ To add an alert, use a special blockquote line specifying the alert type, follow
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
-Here are the rendered alerts:
-
-Screenshot of rendered Markdown alerts showing how Note, Tip, Important, Warning, and Caution render with different colored text and icons.
-
-Hiding content with comments
+ 
+## Hiding content with comments
 
 You can tell GitHub to hide content from the rendered Markdown by placing the content in an HTML comment.
 
-<!-- This content will not appear in the rendered Markdown -->
-Ignoring Markdown formatting
+`<!-- This content will not appear in the rendered Markdown -->`
+
+## Ignoring Markdown formatting
 
 You can tell GitHub to ignore (or escape) Markdown formatting by using \ before the Markdown character.
 
-Let's rename \*our-new-project\* to \*our-old-project\*.
-
-Screenshot of rendered GitHub Markdown showing how backslashes prevent the conversion of asterisks to italics. The text reads, "Let's rename our-new-project to our-old-project."
-
-For more information on backslashes, see Daring Fireball's "Markdown Syntax."
+`\*Content with asterisks\*` to \*Content with asterisks\*.  
+Normally putting single asterisks around text would make it italics, but inserting a forward-slash before each * makes it normal text.
 
 Note: The Markdown formatting will not be ignored in the title of an issue or a pull request.
-Disabling Markdown rendering
+
+## Disabling Markdown rendering
 
 When viewing a Markdown file, you can click Code at the top of the file to disable Markdown rendering and view the file's source instead.
 
-Screenshot of a Markdown file in a GitHub repository showing options for interacting with the file. A button, labeled "Code", is outlined in dark orange.
-
 Disabling Markdown rendering enables you to use source view features, such as line linking, which is not possible when viewing rendered Markdown files.
-
-Further reading
-
