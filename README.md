@@ -248,8 +248,8 @@ Rendered:
 
 You can mention a person or team on GitHub by typing @ plus their username or team name. This will trigger a notification and bring their attention to the conversation. People will also receive a notification if you edit a comment to mention their username or team name.
 
-Note: A person will only be notified about a mention if the person has read access to the repository and, if the repository is owned by an organization, the person is a member of the organization.
-@github/support What do you think about these updates?
+Note: A person will only be notified about a mention if the person has read access to the repository and, if the repository is owned by an organization, the person is a member of the organization. For instance:
+`@github/support` What do you think about these updates?
 
 When you mention a parent team, members of its child teams also receive notifications, simplifying communication with multiple groups of people. For more information, see "About teams."
 
@@ -257,21 +257,19 @@ Typing an @ symbol will bring up a list of people or teams on a project. The lis
 
 The autocomplete results are restricted to repository collaborators and any other participants on the thread.
 
-Referencing issues and pull requests
+## Referencing issues and pull requests
 
 You can bring up a list of suggested issues and pull requests within the repository by typing #. Type the issue or pull request number or title to filter the list, and then press either tab or enter to complete the highlighted result.
 
-For more information, see "Autolinked references and URLs."
+## Referencing external resources
 
-Referencing external resources
+If custom autolink references are configured for a repository, then references to external resources, like a JIRA issue or Zendesk ticket, convert into shortened links. To know which autolinks are available in your repository, contact someone with admin permissions to the repository.
 
-If custom autolink references are configured for a repository, then references to external resources, like a JIRA issue or Zendesk ticket, convert into shortened links. To know which autolinks are available in your repository, contact someone with admin permissions to the repository. For more information, see "Configuring autolinks to reference external resources."
-
-Uploading assets
+## Uploading assets
 
 You can upload assets like images by dragging and dropping, selecting from a file browser, or pasting. You can upload assets to issues, pull requests, comments, and .md files in your repository.
 
-Using emoji
+## Using emoji
 
 You can add emoji to your writing by typing :EMOJICODE:, a colon followed by the name of the emoji.
 
