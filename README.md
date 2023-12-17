@@ -152,18 +152,29 @@ The old method of specifying images based on the theme, by using a fragment appe
 ## Lists
 
 You can make an unordered list by preceding one or more lines of text with -, *, or +.
-
+Code:
+```
 - George Washington
 * John Adams
 + Thomas Jefferson
-Screenshot of rendered GitHub Markdown showing a bulleted list of the names of the first three American presidents.
+```
+Rendered:
+- George Washington
+* John Adams
++ Thomas Jefferson
 
 To order your list, precede each line with a number.
 
+Code:
+```
 1. James Madison
 1. James Monroe
 1. John Quincy Adams
-Screenshot of rendered GitHub Markdown showing a numbered list of the names of the fourth, fifth, and sixth American presidents.
+```
+Rendered:
+1. James Madison
+1. James Monroe
+1. John Quincy Adams
 
 ### Nested Lists
 
@@ -171,32 +182,41 @@ You can create a nested list by indenting one or more list items below another i
 
 To create a nested list using the web editor on GitHub or a text editor that uses a monospaced font, like Visual Studio Code, you can align your list visually. Type space characters in front of your nested list item until the list marker character (- or *) lies directly below the first character of the text in the item above it.
 
+Code:
+```
 1. First list item
    - First nested list item
      - Second nested list item
-Note: In the web-based editor, you can indent or dedent one or more lines of text by first highlighting the desired lines and then using Tab or Shift+Tab respectively.
-Screenshot of Markdown in Visual Studio Code showing how indented bullets align vertically with the first letter of the text lines above them.
+```
+Rendered:
+1. First list item
+   - First nested list item
+     - Second nested list item
 
-Screenshot of rendered GitHub Markdown showing a numbered item followed by a bulleted item nested one level to the right, and another bulleted item nested yet further to the right.
+Note: In the web-based editor, you can indent or dedent one or more lines of text by first highlighting the desired lines and then using Tab or Shift+Tab respectively.
 
 To create a nested list in the comment editor on GitHub, which doesn't use a monospaced font, you can look at the list item immediately above the nested list and count the number of characters that appear before the content of the item. Then type that number of space characters in front of the nested list item.
 
 In this example, you could add a nested list item under the list item 100. First list item by indenting the nested list item a minimum of five spaces, since there are five characters (100 .) before First list item.
-
+Code:
+```
 100. First list item
      - First nested list item
-Screenshot of rendered GitHub Markdown showing a list item prefaced by the number 100 followed by a bulleted item nested one level to the right.
+```
+Rendered:
+100. First list item
+     - First nested list item
 
 You can create multiple levels of nested lists using the same method. For example, because the first nested list item has seven characters (␣␣␣␣␣-␣) before the nested list content First nested list item, you would need to indent the second nested list item by at least two more characters (nine spaces minimum).
 
+Code:
+```
 100. First list item
        - First nested list item
          - Second nested list item
-Screenshot of rendered GitHub Markdown showing a list item prefaced by the number 100 followed by a bulleted item nested one level to the right, and another bulleted item nested yet further to the right.
-
-For more examples, see the GitHub Flavored Markdown Spec.
-
-Task lists
+```
+Rendered:
+## Task lists
 
 To create a task list, preface list items with a hyphen and space followed by [ ]. To mark a task as complete, use [x].
 
