@@ -216,29 +216,40 @@ Code:
          - Second nested list item
 ```
 Rendered:
+100. First list item
+       - First nested list item
+         - Second nested list item
+
 ## Task lists
 
 To create a task list, preface list items with a hyphen and space followed by [ ]. To mark a task as complete, use [x].
 
+Code:
+```
 - [x] #739
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
-Screenshot showing the rendered version of the markdown. The references to issues are rendered as issue titles.
+```
+Rendered:
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
 
 If a task list item description begins with a parenthesis, you'll need to escape it with \:
 
+Code:
+```
+- [ ] \(Optional) Open a followup issue
+```
+Rendered:
 - [ ] \(Optional) Open a followup issue
 
-For more information, see "About task lists."
+## Mentioning people and teams
 
-Mentioning people and teams
-
-You can mention a person or team on GitHub by typing @ plus their username or team name. This will trigger a notification and bring their attention to the conversation. People will also receive a notification if you edit a comment to mention their username or team name. For more information about notifications, see "About notifications."
+You can mention a person or team on GitHub by typing @ plus their username or team name. This will trigger a notification and bring their attention to the conversation. People will also receive a notification if you edit a comment to mention their username or team name.
 
 Note: A person will only be notified about a mention if the person has read access to the repository and, if the repository is owned by an organization, the person is a member of the organization.
 @github/support What do you think about these updates?
-
-Screenshot of rendered GitHub Markdown showing how the team mention "@github/support" renders as bold, clickable text.
 
 When you mention a parent team, members of its child teams also receive notifications, simplifying communication with multiple groups of people. For more information, see "About teams."
 
