@@ -33,26 +33,26 @@ You can indicate emphasis with bold, italic, strikethrough, subscript, or supers
 
 ### Style	Syntax Keyboard shortcut Example Output
 
-**Bold:**	** ** or __ __  `**This is bold text**`	
-**Italic:**	* * or _ _  _This text is italicized_	
-**Strikethrough:**	~~ ~~  ~~This was mistaken text~~	
-**Bold and nested italic:**	** ** and _ _		**This text is _extremely_ important**	
-All bold and italic	*** ***	None	***All this text is important***	
-Subscript	<sub> </sub>	None	This is a <sub>subscript</sub> text	This is a subscript text
-Superscript	<sup> </sup>	None	This is a <sup>superscript</sup> text	This is a superscript text
-Quoting text
+**Bold:**	** ** or __ __  `**This is bold text**`  **This is bold text**
+**Italic:**	* * or _ _  `_This text is italicized_`  _This text is italicized_
+**Strikethrough:**	~~ ~~  `~~This was mistaken text~~`  ~~This was mistaken text~~
+**Bold and nested italic:**	** ** and _ _		`**This text is _extremely_ important**`  **This text is _extremely_ important**
+All bold and italic	*** ***	None	`***All this text is important***`  ***All this text is important***
+**Subscript:**	`<sub> </sub>`	`This is a <sub>subscript</sub> text`  This is a <sub>subscript</sub> text
+**Superscript:**	`<sup> </sup>`  `This is a <sup>superscript</sup> text`  This is a <sup>superscript</sup> text
+
+## Quoting text
 
 You can quote text with a >.
 
-Text that is not a quote
+`>Text that is a quote`
 
 > Text that is a quote
 Quoted text is indented, with a different type color.
 
-Screenshot of rendered GitHub Markdown showing sample quoted text. The quote is indented with a vertical line on the left, and its text is dark gray rather than black.
+Note: When viewing a conversation, you can automatically quote text in a comment by highlighting the text, then typing R. You can quote an entire comment by clicking, then Quote reply. For more information about keyboard shortcuts, see "Keyboard shortcuts."
 
-Note: When viewing a conversation, you can automatically quote text in a comment by highlighting the text, then typing R. You can quote an entire comment by clicking , then Quote reply. For more information about keyboard shortcuts, see "Keyboard shortcuts."
-Quoting code
+## Quoting code
 
 You can call out code or a command within a sentence with single backticks. The text within the backticks will not be formatted. You can also press the Command+E (Mac) or Ctrl+E (Windows/Linux) keyboard shortcut to insert the backticks for a code block within a line of Markdown.
 
@@ -67,13 +67,10 @@ git status
 git add
 git commit
 ```
-Screenshot of rendered GitHub Markdown showing a code block. The words "git status," "git add," and "git commit" appear in a fixed-width typeface, highlighted in light gray.
 
-For more information, see "Creating and highlighting code blocks."
+If you are frequently editing code snippets and tables, you may benefit from enabling a fixed-width font in all comment fields on GitHub. 
 
-If you are frequently editing code snippets and tables, you may benefit from enabling a fixed-width font in all comment fields on GitHub. For more information, see "About writing and formatting on GitHub."
-
-Supported color models
+### Supported color models
 
 In issues, pull requests, and discussions, you can call out colors within a sentence by using backticks. A supported color model within backticks will display a visualization of the color.
 
@@ -86,52 +83,50 @@ Color	Syntax	Example	Output
 HEX	`#RRGGBB`	`#0969DA`	Screenshot of rendered GitHub Markdown showing how HEX value #0969DA appears with a blue circle.
 RGB	`rgb(R,G,B)`	`rgb(9, 105, 218)`	Screenshot of rendered GitHub Markdown showing how RGB value 9, 105, 218 appears with a blue circle.
 HSL	`hsl(H,S,L)`	`hsl(212, 92%, 45%)`	Screenshot of rendered GitHub Markdown showing how HSL value 212, 92%, 45% appears with a blue circle.
-Notes:
+
+#### Notes:
 
 A supported color model cannot have any leading or trailing spaces within the backticks.
 The visualization of the color is only supported in issues, pull requests, and discussions.
-Links
+
+## Links
 
 You can create an inline link by wrapping link text in brackets [ ], and then wrapping the URL in parentheses ( ). You can also use the keyboard shortcut Command+K to create a link. When you have text selected, you can paste a URL from your clipboard to automatically create a link from the selection.
 
 You can also create a Markdown hyperlink by highlighting the text and using the keyboard shortcut Command+V. If you'd like to replace the text with the link, use the keyboard shortcut Command+Shift+V.
 
-This site was built using [GitHub Pages](https://pages.github.com/).
+This site was built using [GitHub](https://github.com/). `[GitHub](https://github.com/)`
 
-Screenshot of rendered GitHub Markdown showing how text within brackets, "GitHub Pages," appears as a blue hyperlink.
+Note: GitHub automatically creates links when valid URLs are written in a comment.
 
-Note: GitHub automatically creates links when valid URLs are written in a comment. For more information, see "Autolinked references and URLs."
-Section links
+### Section links
 
-You can link directly to a section in a rendered file by hovering over the section heading to expose .
+You can link directly to a section in a rendered file by hovering over the section heading to expose.
 
-Screenshot of a README for a repository. To the left of a section heading, a link icon is outlined in dark orange.
-
-Relative links
+### Relative links
 
 You can define relative links and image paths in your rendered files to help readers navigate to other files in your repository.
 
 A relative link is a link that is relative to the current file. For example, if you have a README file in root of your repository, and you have another file in docs/CONTRIBUTING.md, the relative link to CONTRIBUTING.md in your README might look like this:
 
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+`[Contribution guidelines for this project](docs/CONTRIBUTING.md)`
 GitHub will automatically transform your relative link or image path based on whatever branch you're currently on, so that the link or path always works. The path of the link will be relative to the current file. Links starting with / will be relative to the repository root. You can use all relative link operands, such as ./ and ../.
 
 Relative links are easier for users who clone your repository. Absolute links may not work in clones of your repository - we recommend using relative links to refer to other files within your repository.
 
-Images
+## Images
 
 You can display an image by adding ! and wrapping the alt text in [ ]. Alt text is a short text equivalent of the information in the image. Then, wrap the link for the image in parentheses ().
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
-
-Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.
+`![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)`
 
 GitHub supports embedding images into your issues, pull requests, discussions, comments and .md files. You can display an image from your repository, add a link to an online image, or upload an image. For more information, see "Uploading assets."
 
 Note: When you want to display an image that is in your repository, use relative links instead of absolute links.
 Here are some examples for using relative links to display an image.
 
-Context	Relative Link
+### Context	Relative Link
+
 In a .md file on the same branch	/assets/images/electrocat.png
 In a .md file on another branch	/../main/assets/images/electrocat.png
 In issues, pull requests and comments of the repository	../blob/main/assets/images/electrocat.png?raw=true
@@ -140,20 +135,21 @@ In issues, pull requests and comments of another repository	../../../github/docs
 Note: The last two relative links in the table above will work for images in a private repository only if the viewer has at least read access to the private repository that contains these images.
 For more information, see "Relative Links."
 
-Specifying the theme an image is shown to
+### Specifying the theme an image is shown to
 
 You can specify the theme an image is displayed for in Markdown by using the HTML <picture> element in combination with the prefers-color-scheme media feature. We distinguish between light and dark color modes, so there are two options available. You can use these options to display images optimized for dark or light backgrounds. This is particularly helpful for transparent PNG images.
 
 For example, the following code displays a sun image for light themes and a moon for dark themes:
-
+```
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
   <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
   <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
 The old method of specifying images based on the theme, by using a fragment appended to the URL (#gh-dark-mode-only or #gh-light-mode-only), is deprecated and will be removed in favor of the new method described above.
+```
 
-Lists
+## Lists
 
 You can make an unordered list by preceding one or more lines of text with -, *, or +.
 
@@ -169,7 +165,7 @@ To order your list, precede each line with a number.
 1. John Quincy Adams
 Screenshot of rendered GitHub Markdown showing a numbered list of the names of the fourth, fifth, and sixth American presidents.
 
-Nested Lists
+### Nested Lists
 
 You can create a nested list by indenting one or more list items below another item.
 
