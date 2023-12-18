@@ -190,8 +190,8 @@ Code:
 ```
 Rendered:
 1. First list item
-   - First nested list item
-     - Second nested list item
+  - First nested list item
+    - Second nested list item
 
 Note: In the web-based editor, you can indent or dedent one or more lines of text by first highlighting the desired lines and then using Tab or Shift+Tab respectively.
 
@@ -217,8 +217,8 @@ Code:
 ```
 Rendered:
 100. First list item
-       - First nested list item
-         - Second nested list item
+  - First nested list item
+    - Second nested list item
 
 ## Task lists
 
