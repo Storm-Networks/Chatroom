@@ -1,10 +1,15 @@
 # Chatroom
 Simply go to the discussions tab! Enjoy!
 
-Get started/Writing on GitHub/Start writing on GitHub/Basic formatting syntax
-Basic writing and formatting syntax
+# Markdown
 
-In this article
+## What is markdown? 
+Markdown, or md (or MD) is a human-friendly syntax for formatting plain text. It is used to make README's (like this one) and it can also be used to format github disscusions.
+
+Get started/Writing on GitHub/Start writing on GitHub/Basic formatting syntax
+Basic writing and formatting syntax:
+
+## Headings
 To create a heading, add one to six # symbols before your heading text. The number of # you use will determine the hierarchy level and typeface size of the heading.
 
 Code:
