@@ -1,5 +1,5 @@
 # Chatroom
-Simply go to the discussions tab! Enjoy!
+Simply go to the discussions tab!
 
 # Markdown
 
