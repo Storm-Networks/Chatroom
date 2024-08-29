@@ -6,7 +6,6 @@ Simply go to the discussions tab!
 ## What is markdown? 
 Markdown, or md (or MD) is a human-friendly syntax for formatting plain text. It is used to make README's (like this one) and it can also be used to format github disscusions.
 
-Get started/Writing on GitHub/Start writing on GitHub/Basic formatting syntax
 Basic writing and formatting syntax:
 
 ## Headings
